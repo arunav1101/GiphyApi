@@ -51,10 +51,11 @@ function renderButtons() {
 
     $("#buttons-view").empty();
 
+    // <button type="button" class="btn btn-info" id="searchButton">Search</button>
     // Looping through the array of animal
     animals.forEach((myanimal) => {
         $("#buttons-view")
-            .append(`<button class ="animal" data-name=${myanimal}>${myanimal}</button>`);
+            .append(`<button type ="button" class ="btn btn-info animal mr-2 mb-2"  data-name=${myanimal}>${myanimal}</button>`);
     });
 }
 
