@@ -2,7 +2,6 @@
 var animals = ["cat", "falcon", "dog", "rat", "rabbit", "turtle", "crab", "frog", "shark", "goldfish",
     "chicken", "goat"
 ];
-
 $(document).ready(function () {
     $(document.body).on("click", "button", function () {
         var animalSearch = $(this).attr("data-name");
@@ -22,15 +21,15 @@ $(document).ready(function () {
                 $("#gifs-appear-here")
                     .append(
                         `<div class="col-sm-3 ml-4">
-                    Rating: ${element.rating}
+                    <h4>Rating: ${element.rating}</h4>
                     <img src ="${element.images.fixed_height_still.url}"
           data-still="${element.images.fixed_height_still.url}"
           data-animate="${element.images.fixed_height.url}"
           data-state="still" class="gif">
                     </div>`
                     )
-            });
-
+            $('h4').css("color","green");
+                });
         });
     });
 
