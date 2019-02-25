@@ -63,6 +63,7 @@ $(document).ready(function () {
         else {
             if (animals.includes(animalName)) {
                 alert("Animal already in the list ! Add another");
+                $('#animal-input').val('');
                 return;
             }
             // The animal from the textbox is then added to our array
