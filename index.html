@@ -11,6 +11,9 @@
         input {
             margin: 10px;
         }
+        body{
+            background:url("https://wallpaperplay.com/walls/full/b/b/0/243699.jpg")no-repeat fixed center;
+        }
     </style>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
@@ -23,24 +26,27 @@
 <body>
 
     <div class="container">
-        <h1>Animal Search</h1>
-<form>
-        <!-- Rendered Buttons will get Dumped Here  -->
-        <div id="buttons-view"></div>
-    </form>
-        <form id="animal-form">
-            <label for="animal-input">Add an Animal, Yo!</label>
-            <input type="text" id="animal-input"><br>
-
-            <!-- Button triggers new animal to be added -->
-            <input id="add-animal" type="submit" value="Add a animal, Yo!">
+        <h1>Animal Farm</h1>
+        <form>
+            <div class="row">
+                <div class="col-ml-4" id="buttons-view">
+                </div>
+                <div class="row">
+                    <form id="animal-form">
+                        <!-- <label for="animal-input">Add an Animal, Yo! </label> -->
+                        <input type="text" id="animal-input">
+                        <input class="float-right btn btn-info" id="add-animal" type="submit" value="Add an animal" placeholder="Enter Animal Name">
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row" id="gifs-appear-here">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </form>
-        <div id="gifs-appear-here">
-        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="logic.js"></script>
-
 </body>
-
 </html>
