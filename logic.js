@@ -33,6 +33,10 @@ $(document).ready(function () {
         });
     });
 
+    $(document.body).on("click", "reset", function () {
+        $("#buttons-view").empty();
+    });
+
     $(document.body).on("click", ".gif", function () {
         ($(this).attr("data-state") === "still") ? $(this)
             .attr("data-state", "animate")
@@ -41,7 +45,7 @@ $(document).ready(function () {
             .attr("src", $(this).attr("data-still"));
     });
 
-
+    
     // Function for displaying Animals gifs 
     function renderButtons() {
         $("#buttons-view").empty();
